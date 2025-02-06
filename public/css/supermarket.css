@@ -1,0 +1,23 @@
+.supermarket {
+  width: 89%;
+  margin: 0 5% 0 5%;
+
+  height: 110px;
+  background-color: #eceeee;
+  border-radius: 16px;
+  .inside {
+    height: 100%;
+    padding: 14px 40px 14px 40px;
+    .right {
+      align-items: center;
+      p {
+        background-color: #029a49;
+        color: #ffffff;
+        border-radius: 16px;
+        font-family: IRANYekan, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}

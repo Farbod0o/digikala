@@ -1,0 +1,47 @@
+.brands {
+  width: 89%;
+  margin: 0 5%;
+  height: 225px;
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 16px;
+  .title {
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    p {
+      font-size: 21px;
+      font-weight: 500;
+      font-family: IRANYekan, sans-serif;
+      color: rgb(12, 12, 12);
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 60%;
+    margin-top: 2%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.8px solid rgb(240, 240, 241);
+
+    .slide-item {
+      img {
+        width: 110px;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

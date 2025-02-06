@@ -1,0 +1,41 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  text-align: center;
+  h3 {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: IRANYekan, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  .category-w {
+    width: 86%;
+    margin: 0 7%;
+    background-color: rgb(255, 255, 255);
+
+    .sec {
+      justify-content: space-between;
+      padding: 0 4%;
+
+      a {
+        text-decoration: none;
+        img {
+          width: 100px;
+        }
+        p {
+          max-width: 100px;
+          margin-top: 8px;
+          font-size: 12px;
+          font-weight: 700;
+          text-align: center;
+          font-family: IRANYekan, sans-serif;
+          color: rgb(12, 12, 12);
+        }
+      }
+    }
+  }
+}

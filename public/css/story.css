@@ -1,0 +1,38 @@
+.story {
+  width: 100%;
+  height: 170px;
+  justify-content: center;
+  .story_center {
+    width: 85%;
+    .swiper-slide-a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 18px;
+      text-decoration: none;
+
+      .img {
+        width: 84px;
+        height: 84px;
+        margin-top: 24px;
+        border-radius: 50%;
+        padding: 2px;
+        border: 3px solid #a6459a;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .title {
+        margin-top: 10px;
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+        font-family: IRANYekan, sans-serif;
+        color: rgb(12, 12, 12);
+      }
+    }
+  }
+}

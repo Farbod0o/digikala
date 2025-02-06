@@ -1,0 +1,36 @@
+.container-2xl {
+  display: flex;
+  width: 89%;
+  margin: 2% 5% 0 5%;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: inherit;
+  text-decoration: none;
+  text-align: center;
+  .container-2xl-b {
+    img {
+      border-radius: 16px;
+      width: 99%;
+    }
+  }
+  .container-2xl-a {
+    margin: 0 25px;
+    text-decoration: none;
+
+    .img {
+      width: 52px;
+      max-width: 52px;
+      img {
+        width: 100%;
+      }
+    }
+    .text-caption-strong {
+      max-width: 52px;
+      margin-top: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: IRANYekan, sans-serif;
+      color: rgb(63, 64, 100);
+    }
+  }
+}

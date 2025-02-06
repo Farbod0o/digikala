@@ -1,0 +1,14 @@
+.sp-sale {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  background-color: #ffffff;
+  .container-2xl-w3-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    img {
+      width: 95%;
+      border-radius: 16px;
+    }
+  }
+}

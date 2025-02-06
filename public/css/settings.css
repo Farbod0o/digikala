@@ -1,0 +1,93 @@
+@font-face {
+  font-family: iranbold-medium;
+  src: url(../../fonts/iranbold-medium/IRANYekanWeb-Medium.eot);
+  src: url(../../fonts/iranbold-medium/IRANYekanWeb-Medium.ttf);
+  src: url(../../fonts/iranbold-medium/IRANYekanWeb-Medium.woff);
+  src: url(../../fonts/iranbold-medium/IRANYekanWeb-Medium.woff2);
+}
+@font-face {
+  font-family: iranbold-bold;
+  src: url(../../fonts/iranbold-bold/IRANYekanWeb-Bold.eot);
+  src: url(../../fonts/iranbold-bold/IRANYekanWeb-Bold.ttf);
+  src: url(../../fonts/iranbold-bold/IRANYekanWeb-Bold.woff);
+  src: url(../../fonts/iranbold-bold/IRANYekanWeb-Bold.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-36 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.py-4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.mgx-20{
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+.radiousTRBL{
+  border-radius: 0 7px 7px 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 4px auto;
+}
+
+.noborder{
+  border: none !important;
+}

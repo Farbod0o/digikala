@@ -1,0 +1,43 @@
+.read {
+  width: 100%;
+  height: 420px;
+  .read-center {
+    width: 89%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    .title {
+      p {
+        margin-right: 20px;
+        font-family: IRANYekan, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        align-items: center;
+      }
+    }
+    .read-main {
+      .news {
+        width: 100%;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          width: 24%;
+          border: 1px solid #e0e0e2;
+          border-radius: 8px;
+          p {
+            margin: 4px 8px 0 0;
+            height: 60px;
+            font-family: IRANYekan, sans-serif;
+            color: rgb(12, 12, 12);
+            font-size: 12px;
+            font-weight: 400;
+          }
+          img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
