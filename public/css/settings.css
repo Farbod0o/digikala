@@ -20,7 +20,7 @@
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .w-full {
@@ -51,7 +51,6 @@ body {
   padding-right: 12px;
 }
 
-
 .px-16 {
   padding-left: 16px;
   padding-right: 16px;
@@ -66,28 +65,26 @@ body {
   margin-left: 8px;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
 }
 
-
-.mgx-20{
+.mgx-20 {
   margin-right: 20px;
   margin-left: 20px;
-
 }
-.radiousTRBL{
+.radiousTRBL {
   border-radius: 0 7px 7px 0;
 }
 
 .center {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: 4px auto;
 }
 
-.noborder{
+.noborder {
   border: none !important;
 }
