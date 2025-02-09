@@ -35,7 +35,10 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .py-36 {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -63,6 +66,14 @@ body {
 
 .ml-8 {
   margin-left: 8px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mr-12 {
+  margin-right: 12px;
 }
 
 .flex-row {
