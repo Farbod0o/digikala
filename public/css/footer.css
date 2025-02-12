@@ -1,4 +1,3 @@
-
 .footer .px-5 {
   display: flex;
   flex-direction: column;
@@ -88,13 +87,26 @@
     color: rgb(63, 64, 100);
   }
 }
-
-
-.footer .download{
-  width: 95%;
+.footer .download {
+  width: 98%;
   height: 76px;
   margin: 0 auto;
   margin-top: 36px;
   background-color: rgb(60, 75, 109);
   border-radius: 8px;
+  .dright {
+    margin-right: 21px;
+    display: flex;
+    align-items: center;
+    h3 {
+      display: flex;
+      margin-right: 16px;
+      color: rgb(255, 255, 255);
+      font-family: IRANYekan, sans-serif;
+      text-align: center;
+    }
+    img{
+      width: 44px;
+    }
+  }
 }

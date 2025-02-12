@@ -23,6 +23,7 @@ body {
   overflow: auto;
 }
 
+
 .w-full {
   width: 100%;
 }
@@ -98,4 +99,15 @@ body {
 
 .noborder {
   border: none !important;
+}
+
+.noborder-btm {
+  border-bottom: none !important;
+}
+
+.noborder-left {
+  border-left: none !important;
+}
+.radTB{
+  border-radius: 0 7px 7px 0;
 }

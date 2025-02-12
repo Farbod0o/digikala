@@ -1,7 +1,11 @@
 .heaad {
   height: 168px;
   box-shadow: 1px 0px 1px 1px rgb(206, 206, 206);
+  position: sticky;
+  z-index: 100;
+  top: 0;
   
+
   .top-header {
     height: 60px;
   }
@@ -84,6 +88,7 @@
     }
   }
   .bottom-header {
+    background-color: #ffffff;
     height: 40px;
     align-items: center;
     .right {
