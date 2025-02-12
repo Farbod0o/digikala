@@ -1,0 +1,115 @@
+.long {
+  width: 100%;
+  height: 818px;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .long-center {
+    width: 89%;
+    height: 820px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 20px;
+  }
+  .long-header-text {
+    width: 100%;
+    height: 75px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    font-size: 20px;
+    font-family: IRANYekan, sans-serif;
+    align-items: center;
+
+    svg {
+      fill: rgb(218, 39, 39);
+    }
+  }
+}
+
+.center-childs-3 {
+  width: 100%;
+  height: 247.33px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+
+  .product-2 {
+    width: 232px;
+    height: inherit;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+
+    .products-child-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .tarkibi {
+      width: 100%;
+      height: fit-content;
+
+      display: flex;
+      .products-child-off {
+        width: fit-content;
+        height: fit-content;
+
+        margin-top: 10px;
+        margin-right: 10px;
+
+        .off-center {
+          width: 37px;
+          height: 20px;
+          background-color: rgb(211, 47, 47);
+          color: rgb(255, 255, 255);
+          border-radius: 10px;
+          font-family: IRANYekan, sans-serif;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .products-child-prise {
+        width: fit-content;
+        height: fit-content;
+
+        margin-top: 10px;
+        margin-right: 80px;
+        display: flex;
+
+        font-size: 14px;
+        font-weight: bold;
+        font-family: IRANYekan, sans-serif;
+      }
+      .products-child-toman {
+        fill: rgb(59, 59, 59);
+        svg {
+          margin-top: 3px;
+          margin-right: 3px;
+        }
+      }
+    }
+    .products-child-dott {
+      width: 100%;
+      height: 20px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: end;
+      box-sizing: border-box;
+      padding-left: 32px;
+
+      span {
+        color: rgb(167, 167, 167);
+        font-size: 12px;
+        text-decoration: line-through;
+        font-family: IRANYekan, sans-serif;
+        display: flex;
+      }
+    }
+  }
+}
