@@ -4,7 +4,6 @@
   position: sticky;
   z-index: 100;
   top: 0;
-  
 
   .top-header {
     height: 60px;
@@ -103,49 +102,94 @@
       .navbar {
         display: flex;
         align-items: center;
-
-        width: 145px;
-        a {
-          color: rgb(63, 64, 100);
+        width: fit-content;
+        height: 100%;
+        position: relative;
+        .main-sorting {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          width: 60vw;
+          height: 70vh;
+          display: none;
+          z-index: 100;
+          .sub {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+        &:hover .main-sorting {
+          display: block;
+          overflow: scroll;
+        }
+        .menu-right {
+          width: 20%;
+          background-color: #f5f5f5;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+        }
+        .menu-left {
+          display: none;
+          width: 80%;
+          background-color: #20c61a;
+          flex-direction: column;
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 12px;
+            font-family: IRANYekan, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            box-sizing: border-box;
+          }
+        }
+        
+        .menu-right a {
           text-decoration: none;
-          font-size: 14px;
-          font-weight: 700;
+          color: black;
+          padding: 8px 12px;
           font-family: IRANYekan, sans-serif;
-        }
-        span {
-          margin: 4px 20px 0 0;
-          width: 1px;
-          height: 16px;
-          border-right: 1px solid rgb(224, 224, 226);
-        }
-        img {
-          width: 20px;
-          height: 20px;
+          font-size: 12px;
+          font-weight: 700;
+          box-sizing: border-box;
         }
       }
+
+      .navbar img {
+        width: 20px;
+        height: 20px;
+      }
+
       .navigation {
         display: flex;
-        .menu-link {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: rgb(98, 102, 109);
-          font-size: 12px;
-          font-weight: 400;
-          font-family: IRANYekan, sans-serif;
-        }
+      }
 
-        img {
-          margin: 2px;
-          width: 18px;
-          height: 18px;
-        }
-        span {
-          margin: 4px 20px 0 0;
-          width: 1px;
-          height: 16px;
-          border-left: 1px solid rgb(224, 224, 226);
-        }
+      .navigation .menu-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(98, 102, 109);
+        font-size: 12px;
+        font-weight: 400;
+        font-family: IRANYekan, sans-serif;
+      }
+
+      .navigation img {
+        margin: 2px;
+        width: 18px;
+        height: 18px;
+      }
+
+      .navigation span {
+        margin: 4px 20px 0 0;
+        width: 1px;
+        height: 16px;
+        border-left: 1px solid rgb(224, 224, 226);
       }
     }
     .left {
