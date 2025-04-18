@@ -1,33 +1,42 @@
 .heaad {
   height: 168px;
-  box-shadow: 1px 0px 1px 1px rgb(206, 206, 206);
   position: sticky;
-  z-index: 100;
   top: 0;
+  z-index: 100;
+  box-shadow: 1px 0px 1px 1px rgb(206, 206, 206);
 
   .top-header {
     height: 60px;
   }
+
   .main-header {
     width: 100%;
-
     height: 68px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+
     .main {
+      display: flex;
+      justify-content: space-between;
+
       .main-start {
+        display: flex;
+        align-items: center;
         width: 80%;
+
         .logo-main {
-          display: flex;
           height: 100%;
           margin-left: 20px;
+
           img {
             width: 195px;
           }
         }
+
         .search {
           width: 55%;
           display: flex;
           align-items: center;
+
           .input {
             display: flex;
             align-items: center;
@@ -37,45 +46,47 @@
             background-color: #f0f0f1;
             border: none;
             border-radius: 8px;
+
             input {
+              width: 100%;
               font-size: 12px;
               font-weight: 400;
               font-family: IRANYekan, sans-serif;
               text-align: right;
               border: none;
               outline: none;
-              background-color: transparent;
+              background: transparent;
             }
           }
         }
       }
 
       .main-end {
+        display: flex;
         align-items: center;
-        justify-content: end;
-
+        justify-content: flex-end;
         width: 20%;
+
         .login {
+          width: 135px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 135px;
-          height: 40px;
-          border: 1px solid rgb(224, 224, 226);
-          text-align: center;
+          border: 1px solid #e0e0e2;
           border-radius: 8px;
           font-size: 12px;
           font-weight: 700;
           font-family: IRANYekan, sans-serif;
+          color: #0c0c0c;
           text-decoration: none;
-          color: rgb(12, 12, 12);
         }
+
         .sperate {
-          display: flex;
-          margin: 0 12px 0 12px;
+          margin: 0 12px;
           width: 1px;
           height: 24px;
-          border-right: 1px solid rgb(224, 224, 226);
+          border-right: 1px solid #e0e0e2;
         }
 
         .cart {
@@ -86,156 +97,173 @@
       }
     }
   }
+
   .bottom-header {
-    background-color: #ffffff;
     height: 40px;
-    align-items: center;
+    background-color: #fff;
+
     .right {
       width: 80%;
-      .menu-link {
-        color: rgb(98, 102, 109);
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 400;
-        font-family: IRANYekan, sans-serif;
-      }
+
       .navbar {
+        position: relative;
         display: flex;
         align-items: center;
-        width: fit-content;
         height: 100%;
-        position: relative;
+
         .mega-menu {
           position: absolute;
           top: 100%;
           right: 0;
-          background: white;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
           width: 60vw;
           height: 70vh;
-          display: block;
+          display: none;
+          flex-direction: row;
+          background-color: #0eb66d;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
           z-index: 100;
-          .mega-menu-sub {
+
+          .side-menu {
+            width: 20%;
             display: flex;
             flex-direction: column;
+
+            .mega-menu-sub-item {
+              width: 100%;
+              background-color: #e3dc24;
+
+              .product_group {
+                width: 100%;
+                min-height: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                transition: 300ms;
+
+                &:hover {
+                  background-color: #fff;
+                  color: #ef394e;
+
+                  .icon {
+                    color: #ef394e;
+                  }
+                }
+
+                .icon {
+                  width: 20px;
+                  height: 20px;
+                  margin-left: 2px;
+                  object-fit: cover;
+                }
+
+                span {
+                  max-height: 50px;
+                }
+              }
+            }
+          }
+
+          .content-area {
+            width: 80%;
+            background-color: #e6d7d7;
+
+            .content-box {
+              display: none;
+
+              &.content-1,
+              &.content-2 {
+              }
+            }
+          }
+
+          .menu-left {
+            width: 100%;
+            height: 30vh;
+            background-color: #1fd119;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            a {
+              text-decoration: none;
+              color: black;
+              padding: 8px 12px;
+              font-family: IRANYekan, sans-serif;
+              font-size: 12px;
+              font-weight: 700;
+            }
           }
         }
+
         &:hover .mega-menu {
-          display: block;
+          display: flex;
           overflow: scroll;
         }
-        .mega-menu .mega-menu-sub-item {
 
-          width: 100%;
-          background-color: #f5f5f5;
-          display: flex;
-          flex-direction: row;
-          .product_group{
-            width: 20%;
-            min-height: 50px;
-            max-height: 50px;
-            display: flex;
-            font-size: 12px;
-            align-items: center;
-            transition: 300ms;
-            span{
-              max-height: 50px ;
-            }
-            .icon {
-              width: 20px;
-              height: 20px;
-              margin-left: 2px;
-              object-fit: cover;
-            }
-          }
-
-          .product_group:hover {
-            color: rgb(239, 57, 78);
-            background-color: #ffffff;
-          }
-          .product_group:hover .icon {
-            color: rgb(239, 57, 78);
-          }
-        }
-        .mega-menu .menu-left {
+        .mega-menu:has(.item-1:hover) .content-1,
+        .mega-menu:has(.item-2:hover) .content-2 {
           display: block;
-          width: 100%;
-          height: 30vh;
-          background-color: #1fd119;
-          flex-direction: column;
-          padding: 10px;
-          a {
-            text-decoration: none;
-            color: black;
-            padding: 8px 12px;
-            font-family: IRANYekan, sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            box-sizing: border-box;
-          }
-        }
-        
-        .mega-menu-sub-item a {
-          text-decoration: none;
-          color: black;
-          padding: 8px 12px;
-          font-family: IRANYekan, sans-serif;
-          font-size: 12px;
-          font-weight: 700;
-          box-sizing: border-box;
         }
       }
 
-      .navbar img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .navigation {
-        display: flex;
-      }
-
-      .navigation .menu-link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: rgb(98, 102, 109);
+      .menu-link {
+        font-family: IRANYekan, sans-serif;
         font-size: 12px;
         font-weight: 400;
-        font-family: IRANYekan, sans-serif;
-      }
-
-      .navigation img {
-        margin: 2px;
-        width: 18px;
-        height: 18px;
-      }
-
-      .navigation span {
-        margin: 4px 20px 0 0;
-        width: 1px;
-        height: 16px;
-        border-left: 1px solid rgb(224, 224, 226);
+        text-decoration: none;
+        color: #62666d;
       }
     }
+
     .left {
       width: 20%;
-      justify-content: end;
+      display: flex;
+      justify-content: flex-end;
+
       .location {
         width: 173px;
         height: 34px;
         border-radius: 9999px;
         background-color: #fef6ef;
+        display: flex;
         justify-content: space-between;
         align-items: center;
+
         p {
-          color: rgb(245, 127, 23);
+          color: #f57f17;
           font-family: IRANYekan, sans-serif;
           font-size: 12px;
           font-weight: 700;
           text-align: center;
         }
+      }
+    }
+
+    .navigation {
+      display: flex;
+
+      .menu-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #62666d;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: IRANYekan, sans-serif;
+      }
+
+      img {
+        margin: 2px;
+        width: 18px;
+        height: 18px;
+      }
+
+      span {
+        margin: 4px 20px 0 0;
+        width: 1px;
+        height: 16px;
+        border-left: 1px solid #e0e0e2;
       }
     }
   }
