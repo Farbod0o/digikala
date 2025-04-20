@@ -140,3 +140,14 @@ body {
 .swiper-button-disabled {
   display: none !important;
 }
+.swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  transition: 300ms !important;
+}
+.swiper-pagination-bullet-active {
+  width: 16px !important;
+  height: 4px !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+}
