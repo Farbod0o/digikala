@@ -112,7 +112,13 @@
         display: flex;
         align-items: center;
         height: 100%;
-
+        .dastebandi {
+          font-family: IRANYekan, sans-serif;
+          text-decoration: none;
+          color: rgb(63, 64, 100);
+          font-size: 14px;
+          font-weight: 700;
+        }
         .mega-menu {
           position: absolute;
           top: 100%;
@@ -130,6 +136,7 @@
             width: 20%;
             display: flex;
             flex-direction: column;
+            overflow: scroll;
 
             .mega-menu-sub-item {
               width: 100%;
@@ -178,33 +185,38 @@
             .content-box {
               display: none;
               padding: 10px;
-              span{
+              span {
                 display: block;
                 font-size: 12px;
                 font-weight: 700;
                 font-family: IRANYekan, sans-serif;
-                color:rgb(0, 142, 178);
+                color: rgb(0, 142, 178);
               }
-              .groups{
+              .groups {
                 padding-top: 15px;
-                display: flex;
-                flex-direction: row;
-                .group{
+                .group {
                   width: 25%;
-                  h3{
+                  h3 {
                     font-size: 14px;
                     font-weight: 700;
                     font-family: IRANYekan, sans-serif;
                     margin-bottom: 20px;
                     margin-top: 10px;
+                    &:hover {
+                      color: #ef394e;
+                    }
                   }
-                  a{
+                  a {
                     text-decoration: none;
                     margin-bottom: 5px;
                     display: block;
-                    color:rgb(129, 133, 139);
+                    color: rgb(129, 133, 139);
                     font-family: IRANYekan, sans-serif;
                     font-size: 12px;
+                    &:hover {
+                      color: #ef394e;
+                      font-weight: 600;
+                    }
                   }
                 }
               }
@@ -235,7 +247,6 @@
 
         &:hover .mega-menu {
           display: flex;
-          overflow: scroll;
         }
 
         .mega-menu:has(.item-1:hover) .content-1,
@@ -266,13 +277,166 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        cursor: pointer;
+        label {
+          display: flex;
+          flex-direction: row;
+        }
         p {
           color: #f57f17;
           font-family: IRANYekan, sans-serif;
           font-size: 12px;
           font-weight: 700;
           text-align: center;
+          cursor: pointer;
+        }
+        .selectCityBack {
+          inset: 0 0 0 0;
+          position: fixed;
+          background-color: #a0a0a087;
+          display: none;
+          z-index: 999999999999;
+          justify-content: center;
+          .p {
+            margin-right: 5%;
+            p {
+              
+              margin-top: 10px;
+              font-family: IRANYekan, sans-serif;
+              color: rgb(66, 66, 66);
+              font-size: 14px;
+              font-weight: 400;
+              max-width: 90%;
+              text-align: right;
+            }
+          }
+
+          
+          .scrollbar{
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            .swiper {
+              width: 90%;
+              height: 60%;
+              margin-top: 2%;
+            }
+          
+            .swiper-slide {
+              font-size: 18px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-width: 80px;
+              min-height: 50px;
+            
+              .slide-item {
+                a {
+                  display: inline-block;
+                  min-width: 60px;
+                  box-sizing: border-box;
+                  text-decoration: none;
+                  border: 1px solid rgb(220, 220, 220);  
+                  border-radius: 20px; 
+                  color: rgb(66, 66, 66);
+                  font-family: IRANYekan, sans-serif;
+                  font-size: 0.875rem;
+                  font-weight: 600;
+                  padding: 10px 16px;
+                  margin: 0 6px;
+                  transition: all 0.3s ease;
+            
+                }
+              }
+            }
+            
+          
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            p{
+              margin-top: 10px;
+              font-family: IRANYekan, sans-serif;
+              color: rgb(66, 66, 66);
+              font-size: 17px;
+              font-weight: 700;
+              margin-right: 5%;
+              text-align: right;
+            }
+          }
+          .selectCityBox {
+            width: 30%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: #ffffff;
+            position: absolute;
+            left: calc(50% - 27% / 2);
+            top: calc(50% - 80% / 2);
+            display: flex;
+            flex-direction: column;
+            .box-top {
+              width: 100%;
+              height: 10%;
+              padding: 0 20px;
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+              justify-content: space-between;
+              top: 0;
+              right: 0;
+              border-bottom: 1px solid #f0f0f1;
+              p {
+                color: rgb(12, 12, 12);
+                font-size: 16px;
+                font-weight: 700;
+                font-family: IRANYekan, sans-serif;
+              }
+              label {
+                color: rgb(66, 71, 80);
+                font-size: 28px;
+                cursor: pointer;
+                font-family: IRANYekan, sans-serif;
+              }
+            }
+            .serarchBox {
+              justify-content: center;
+              margin-top: 10px;
+              .input {
+                align-items: center;
+                width: 90%;
+                height: 44px;
+                padding-right: 20px;
+                background-color: #f0f0f1;
+                border: none;
+                border-radius: 8px;
+
+                input {
+                  width: 100%;
+                  font-size: 12px;
+                  font-weight: 400;
+                  font-family: IRANYekan, sans-serif;
+                  text-align: right;
+                  border: none;
+                  outline: none;
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
+        #modal:checked ~ .selectCityBack {
+          display: flex;
+        }
+        #close:checked ~ .selectCityBack {
+          display: none;
+        }
+        #modal,
+        #close {
+          display: none;
         }
       }
     }
