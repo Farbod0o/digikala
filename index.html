@@ -13,8 +13,36 @@
     </div>
     <div class="suprmrkt">
       <a class="flex-row" href=""
-        ><p>سوپر‌مارکت</p>
-        <img src="./public/images/support.svg" alt="" />
+        ><label class="flex-row" for="market">
+          <p>سوپر‌مارکت</p>
+          <img src="./public/images/header/supermarket-sup.svg" alt="" />
+        </label>
+        <input type="radio" name="market" id="market" />
+        <input type="radio" name="market" id="close_market" />
+        <div class="super_back">
+          <div class="super_box">
+            <div class="top flex-row">
+              <div class="right">
+                <h3>یکی از سوپرمارکت‌های زیر را انتخاب کنید</h3>
+                <p>فقط در شهرهای تهران و کرج</p>
+              </div>
+              <div class="left">
+                <label for="close_market">&times;</label>
+              </div>
+            </div>
+            <div class="bottom flex-row">
+              <div class="green">
+                <span>پرتخفیف و متنوع</span>
+                <img src="./public/images/fresh-shop-basket.webp" alt="">
+
+              </div>
+              <div class="orange">
+                <span>ارسال سریع</span>
+                <img src="./public/images/jet-shop-basket.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </a>
     </div>
     <div class="heaad">
@@ -719,8 +747,6 @@
             </div>
             <div class="left flex-row">
               <div class="location flex-row px-12 py-4">
-                <!-- <img src="./public/images/header/pointer-mark.svg" alt="" /> -->
-
                 <label for="modal">
                   <img src="./public/images/header/pointer-mark.svg" alt="" />
                   <p>شهر خود را انتخاب کنید</p>
@@ -755,97 +781,105 @@
 
                     <div class="scrollbar">
                       <p>شهرهای پرتکرار</p>
-                      <div class="swiper mySwiper-brand">
+                      <div class="swiper mySwiper-city">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <div class="slide-item">
-                              <a href="">
-                              تهران
-                              </a>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                کرج
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                اصفهان
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                مشهد
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                ساری
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                رشت
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                اهواز
-                              </a>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="slide-item">
-                              <a href="">
-                                تبریز
-                              </a>
+                              <a href=""> تهران </a>
                             </div>
                           </div>
 
                           <div class="swiper-slide">
                             <div class="slide-item">
-                              <a href="">
-                                شیراز
-                              </a>
+                              <a href=""> اصفهان </a>
                             </div>
                           </div>
-
 
                           <div class="swiper-slide">
                             <div class="slide-item">
-                              <a href="">
-                                ارومیه
-                              </a>
+                              <a href=""> مشهد </a>
                             </div>
                           </div>
 
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> ساری </a>
+                            </div>
+                          </div>
 
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> رشت </a>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> اهواز </a>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> تبریز </a>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> شیراز </a>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="slide-item">
+                              <a href=""> ارومیه </a>
+                            </div>
+                          </div>
                         </div>
+                      </div>
 
+                      <div class="cities">
+                        <div class="city">
+                          <span>آذرشهر</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>تیمورلر</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>گوگان</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>ممغان</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>ایلخچی</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>اسکو</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>اهر</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>هوراند</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>بناب</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
+                        <div class="city">
+                          <span>خسروشاه</span>
+                          <span class="sub">در آذربایجان شرقی</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2869,6 +2903,15 @@
 
       var swiper = new Swiper(".mySwiper-brand", {
         slidesPerView: 9.3,
+        spaceBetween: 3,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper-city", {
+        slidesPerView: "5",
         spaceBetween: 3,
         navigation: {
           nextEl: ".swiper-button-next",
