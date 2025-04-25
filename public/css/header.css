@@ -346,12 +346,12 @@
               }
             }
             .cities {
-              height:45%;
+              height:calc(100% - 100px);
               display: flex;
               padding: 0 5%;
               margin-top: 10px;
               flex-direction: column;
-              overflow-y: scroll;
+              /* overflow-y: scroll; */
               .city {
                 padding: 2.5% 0;
                 border-bottom: 1px solid #b2b8c1ca;
@@ -373,6 +373,7 @@
               display: flex;
               flex-direction: column;
               direction: rtl;
+              overflow-y: scroll;
               .swiper {
                 width: 90%;
                 margin-top: 2%;
@@ -465,6 +466,7 @@
       display: flex;
       align-items: center;
       .menu-link {
+        height: 100%;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -472,6 +474,9 @@
         font-size: 12px;
         font-weight: 400;
         font-family: IRANYekan, sans-serif;
+        &:hover{
+          border-bottom: 2px solid rgb(216, 45, 45);
+        }
       }
 
       img {

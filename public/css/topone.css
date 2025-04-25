@@ -1,0 +1,193 @@
+.first_ts {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: IRANYekan, sans-serif;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #c4c0c0;
+      padding: 8px;
+      border-radius: 100px;
+      margin-left: 10px;
+    }
+    a.active {
+      background-color: #fdf6f6;
+      color: rgb(239, 64, 86);
+      border: 1px solid rgb(239, 64, 86);
+    }
+  }
+}
+
+.grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(3, 530px);
+  justify-content: center;
+  align-content: center;
+  .gird_item {
+    border-bottom: 1px solid #dfdcdca6;
+    border-left: 1px solid #dfdcdca6;
+
+    .pp{
+      display: flex;
+      justify-content: flex-end;
+      font-family: IRANYekan, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: rgb(239, 57, 78);
+      padding: 0px 5px;
+      margin-top: 10px;
+    }
+    span{
+      display: flex;
+      justify-content: flex-end;
+      
+      padding: 0 20px;
+      
+      font-family: IRANYekan, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgb(192, 194, 197);
+      
+      text-decoration: line-through;
+      
+      
+    }
+    span2{
+      display: flex;
+      justify-content: flex-end;
+      
+      padding: 0 5px;
+      
+      font-family: IRANYekan, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: rgb(63, 64, 100);
+      
+      
+      
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 5px;
+      background-color: rgb(255, 255, 255);
+
+
+      .price{
+        display: flex;
+        padding: 5px;
+
+        justify-content: space-between;
+        .right {
+          padding: 0 7px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: IRANYekan, sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          border-radius: 16px;
+          background-color: rgb(211, 47, 47);
+        }
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: IRANYekan, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          color: rgb(63, 64, 100);
+        }
+      }
+      .score {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px 8px 0 0;
+        .right {
+          display: flex;
+          align-items: center;
+          color: rgb(98, 102, 109);
+          font-family: IRANYekan, sans-serif;
+          font-size: 11px;
+          font-weight: 400;
+          p{
+            margin-right:5px;
+          }
+        }
+        .left {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          font-weight: 700;
+          color: rgb(63, 64, 100);
+          font-family: IRANYekan, sans-serif;
+        }
+      }
+      .toplogo {
+        display: flex;
+        justify-content: right;
+        padding-right: 5px;
+        align-items: center;
+        height: 25px;
+        img {
+          display: none;
+        }
+        .active {
+          img {
+            display: block;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .pic {
+      padding: 5px;
+      img {
+        display: block;
+        width: calc(100% - 30px);
+      }
+
+      p {
+        font-family: IRANYekan, sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 0px 11px;
+        background-color: rgb(25, 191, 211);
+        box-sizing: border-box;
+        border-radius: 8px 0 0 8px;
+        color: #fff;
+        text-align: center;
+        flex: 0 0 auto;
+        align-self: flex-start;
+      }
+    }
+    h3 {
+      font-family: IRANYekan, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px;
+      color: rgb(63, 64, 100);
+      margin-top: 30px;
+    }
+  }
+}
